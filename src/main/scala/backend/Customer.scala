@@ -3,7 +3,11 @@ package bankingapp
 import scala.util.Random
 import scala.collection.mutable.Buffer
 
-class Customer(firstName: String, lastName: String):
+sealed trait User
+
+class Admin extends User
+
+class Customer(firstName: String, lastName: String) extends User:
 
   val id = Customer.createUniqueCustomerID
 
