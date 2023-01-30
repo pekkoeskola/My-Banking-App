@@ -4,7 +4,7 @@ import java.util.Date
 import scala.collection.mutable.Buffer
 import scala.annotation.newMain
 
-abstract class Account(name: String):
+abstract class Account(val name: String):
 
   private var _balance: Int = 0
 
