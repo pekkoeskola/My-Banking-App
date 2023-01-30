@@ -11,5 +11,5 @@ object kissa:
   def äännähdä = println("miau")
 
 
-@main def run = 
+def run = 
   kissa.äännähdä
