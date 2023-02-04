@@ -9,7 +9,7 @@ class Admin extends User
 
 class Customer(firstName: String, lastName: String) extends User:
 
-  val id = Customer.createUniqueCustomerID
+  val ID = Customer.createUniqueCustomerID
 
   val accounts: Buffer[Account] = Buffer[Account]()
 
